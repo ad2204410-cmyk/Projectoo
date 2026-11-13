@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Alejandra Madariaga">
+    <title>Portafolio | Alejandra Madariaga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a class="logo" href="#inicio" aria-label="Ir al inicio">AM<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" type="button"
+                    aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Acerca de mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow">PORTAFOLIO PERSONAL</p>
+                <h1>Hola, soy <span>Alejandra</span></h1>
+                <p class="hero-text">
+                    Estudiante universitaria interesada en los idiomas, la creatividad
+                    y el desarrollo de nuevas habilidades.
+                </p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+                    <a class="btn btn-secondary" href="#contacto">Contáctame</a>
+                </div>
+            </div>
+
+            <div class="hero-card" aria-label="Presentación">
+                <div class="profile-placeholder">AM</div>
+                <div>
+                    <p class="card-label">Mi enfoque</p>
+                    <h2>Aprender · Crear · Compartir</h2>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section about" id="sobre-mi">
+            <div class="container two-columns">
+                <div>
+                    <p class="section-tag">01 — SOBRE MÍ</p>
+                    <h2 class="section-title">Con curiosidad por aprender cosas nuevas.</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Soy Alejandra Madariaga, estudiante y una persona interesada
+                        en aprender nuevos idiomas y desarrollar mis capacidades
+                        académicas y creativas.
+                    </p>
+                    <p>
+                        Actualmente me interesa especialmente el aprendizaje del
+                        inglés y mi meta profesional es ser profesora de inglés.
+                        También disfruto actividades creativas como dibujar y
+                        explorar nuevas ideas.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item"><strong>🎓</strong><span>Estudiante universitaria</span></div>
+                        <div class="info-item"><strong>🌎</strong><span>Interés por los idiomas</span></div>
+                        <div class="info-item"><strong>✏️</strong><span>Creatividad y dibujo</span></div>
+                        <div class="info-item"><strong>💡</strong><span>Aprendizaje continuo</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="habilidades">
+            <div class="container">
+                <p class="section-tag">02 — HABILIDADES</p>
+                <div class="section-heading">
+                    <h2 class="section-title">Lo que estoy desarrollando</h2>
+                    <p>Estas barras representan de forma visual mi nivel actual y mi proceso de aprendizaje.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-header"><span>Inglés</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="80"></div></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-header"><span>Francés</span><span>45%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="45"></div></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-header"><span>Alemán</span><span>35%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="35"></div></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-header"><span>Creatividad</span><span>85%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="85"></div></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-header"><span>Trabajo en equipo</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="80"></div></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-header"><span>HTML & CSS</span><span>65%</span></div>
+                        <div class="progress"><div class="progress-bar" data-progress="65"></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="proyectos">
+            <div class="container">
+                <p class="section-tag">03 — PROYECTOS</p>
+                <div class="section-heading">
+                    <h2 class="section-title">Ideas que se convierten en proyectos</h2>
+                    <p>Pasa el cursor sobre las tarjetas para ver la interacción.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <div class="project-icon">🌿</div>
+                        <p class="project-type">EMPRENDIMIENTO</p>
+                        <h3>Glowé</h3>
+                        <p>Propuesta de productos de cuidado corporal con enfoque natural y una presentación atractiva.</p>
+                        <button class="project-btn" type="button" data-project="glowe">Ver detalle →</button>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <div class="project-icon">📚</div>
+                        <p class="project-type">ACADÉMICO</p>
+                        <h3>Aprendizaje de idiomas</h3>
+                        <p>Proceso personal de aprendizaje de inglés, francés y alemán mediante práctica constante.</p>
+                        <button class="project-btn" type="button" data-project="idiomas">Ver detalle →</button>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-icon">💻</div>
+                        <p class="project-type">DESARROLLO WEB</p>
+                        <h3>Portafolio interactivo</h3>
+                        <p>Sitio web responsive creado con HTML, CSS y JavaScript para presentar mi perfil profesional.</p>
+                        <button class="project-btn" type="button" data-project="web">Ver detalle →</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contacto">
+            <div class="container contact-layout">
+                <div>
+                    <p class="section-tag">04 — CONTACTO</p>
+                    <h2 class="section-title">¿Hablamos?</h2>
+                    <p class="contact-intro">
+                        Si quieres conocer más sobre mis proyectos o mi proceso de aprendizaje,
+                        puedes dejarme un mensaje.
+                    </p>
+                    <div class="contact-note">
+                        <span>✦</span>
+                        <p>El formulario incluye validación en tiempo real mediante JavaScript.</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required>
+                        <small class="error-message" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required>
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                        <small class="error-message" id="messageError"></small>
+                    </div>
+
+                    <button class="btn btn-primary submit-btn" type="submit">Enviar mensaje</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <a class="logo" href="#inicio">AM<span>.</span></a>
+                <p>Portafolio personal de Alejandra Madariaga.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#sobre-mi">Acerca de mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <p class="copyright">© <span id="year"></span> Alejandra Madariaga</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar ventana">×</button>
+            <p class="section-tag">DETALLE DEL PROYECTO</p>
+            <h2 id="modalTitle">Proyecto</h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <button class="back-top" id="backTop" type="button" aria-label="Volver al inicio">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
