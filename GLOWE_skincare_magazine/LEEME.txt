@@ -1,0 +1,21 @@
+GLOWÉ — Revista digital de skincare
+
+ARCHIVOS
+- index.html: estructura de la web
+- style.css: diseño editorial, paleta verde salvia/crema y animaciones
+- script.js: productos de muestra, búsqueda, filtro por categoría, páginas y enlaces
+- LEEME.txt: instrucciones
+
+PARA ABRIR
+1. Descomprime GLOWE_skincare_magazine.zip.
+2. Abre la carpeta en Visual Studio Code.
+3. Abre index.html en el navegador o usa Live Server.
+
+PERSONALIZAR PRODUCTOS
+Edita el arreglo `products` de script.js. Cada objeto contiene name, category, description, price, image y url.
+- `price` se muestra en pesos colombianos (COP).
+- Sustituye `url: "https://example.com"` por el enlace directo y real del producto en la tienda.
+- Cambia las URL de `image` por fotografías autorizadas de tus productos.
+
+IMPORTANTE
+Los nombres, descripciones y precios son ejemplos ilustrativos, no ofertas verificadas. Los enlaces example.com deben sustituirse antes de publicar. La página no procesa pagos ni ofrece asesoramiento médico. Las imágenes externas y las fuentes requieren conexión a Internet.
