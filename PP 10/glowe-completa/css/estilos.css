@@ -1,0 +1,397 @@
+/* =========================================
+   1. VARIABLES Y REINICIO BÁSICO
+   ========================================= */
+:root {
+    --color-fondo: #FAF8F5;
+    --color-blanco: #FFFFFF;
+    --color-primario: #4A6B5D;
+    --color-primario-oscuro: #354E43;
+    --color-secundario: #D8C3B0;
+    --color-texto: #2C2C2C;
+    --color-texto-suave: #666666;
+    --fuente-titulos: 'Cormorant Garamond', Georgia, serif;
+    --fuente-cuerpo: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --radio-borde: 12px;
+    --sombra: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1, h2, .logo {
+    font-family: var(--fuente-titulos);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   2. ENCABEZADO Y NAVEGACIÓN (ESCRITORIO)
+   ========================================= */
+.header {
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-texto);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--color-primario);
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primario);
+}
+
+/* Botón hamburguesa oculto en PC */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 26px;
+    height: 3px;
+    background-color: var(--color-primario);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   3. SECCIÓN HERO CON IMAGEN EXTERNA
+   ========================================= */
+.hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(34, 48, 42, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: #F2EFE9;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 0.95rem 2.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   4. CATÁLOGO DE PRODUCTOS (4 COLUMNAS)
+   ========================================= */
+.productos {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--color-primario);
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+}
+
+.card {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: #EFECE6;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-wrapper img {
+    transform: scale(1.06);
+}
+
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--color-texto-suave);
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1.5px solid var(--color-primario);
+    background: transparent;
+    color: var(--color-primario);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+/* =========================================
+   5. SECCIÓN RUTINA
+   ========================================= */
+.rutina {
+    background-color: var(--color-blanco);
+    padding: 5rem 0;
+}
+
+.pasos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.paso {
+    padding: 2.2rem;
+    background-color: var(--color-fondo);
+    border-radius: var(--radio-borde);
+}
+
+.paso .numero {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+    margin-bottom: 0.5rem;
+}
+
+.paso h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+}
+
+.paso p {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   6. PIE DE PÁGINA
+   ========================================= */
+.footer {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.social-links a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.social-links a:hover {
+    border-bottom-color: var(--color-blanco);
+}
+
+/* =========================================
+   7. MODALIDADES PARA DISPOSITIVOS
+   ========================================= */
+
+/* MODALIDAD TABLET (Pantallas medianas: 601px a 992px) */
+@media (max-width: 992px) {
+    .hero {
+        padding: 6rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    /* 2 columnas en tabletas */
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MODALIDAD MÓVIL / CELULAR (Pantallas pequeñas: hasta 768px para menú y 600px para tarjetas) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-blanco);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .navbar.activo {
+        max-height: 300px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 1.5rem 0;
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 4.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    /* 1 columna en celulares */
+    .grid-productos,
+    .pasos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2.1rem;
+    }
+}

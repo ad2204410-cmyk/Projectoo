@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOWE | Skincare Natural</title>
+    <!-- Tipografía externa desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">GLOWE<span>Skincare</span></a>
+            
+            <!-- Botón hamburguesa (visible solo en móvil) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#rutina">Rutina</a></li>
+                    <li><a href="https://www.aad.org/public/everyday-care/skin-care-basics" target="_blank" rel="noopener noreferrer">Guía Dermatológica ↗</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero con imagen de fondo real) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Realza la luz natural de tu piel</h1>
+            <p>Fórmulas limpias, botánicas y dermatológicamente probadas para nutrir cada tipo de rostro.</p>
+            <a href="#productos" class="btn-primary">Explorar colección</a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos con imágenes reales -->
+    <section id="productos" class="productos container">
+        <h2 class="section-title">Nuestros Esenciales</h2>
+        <div class="grid-productos">
+            
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80" alt="Gel Limpiador Suave" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Gel Limpiador Suave</h3>
+                    <p>Con extracto de manzanilla y té verde. Purifica sin resecar la barrera cutánea.</p>
+                    <span class="precio">$45.000</span>
+                    <button class="btn-secondary">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Sérum Ácido Hialurónico" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Sérum Ácido Hialurónico</h3>
+                    <p>Hidratación profunda en tres niveles moleculares para una piel firme y jugosa.</p>
+                    <span class="precio">$68.000</span>
+                    <button class="btn-secondary">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80" alt="Crema Reparadora Ceramidas" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Crema Reparadora Ceramidas</h3>
+                    <p>Calma la sensibilidad y sella la humedad durante 24 horas continuas.</p>
+                    <span class="precio">$59.000</span>
+                    <button class="btn-secondary">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80" alt="Fluido Solar FPS 50+" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Fluido Solar FPS 50+</h3>
+                    <p>Acabado invisible, toque seco y protección de amplio espectro UVA/UVB.</p>
+                    <span class="precio">$62.000</span>
+                    <button class="btn-secondary">Añadir al carrito</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Sección de Rutina en 3 Pasos -->
+    <section id="rutina" class="rutina">
+        <div class="container">
+            <h2 class="section-title">Tu Ritual Diario</h2>
+            <div class="pasos-grid">
+                <div class="paso">
+                    <span class="numero">01</span>
+                    <h4>Limpia</h4>
+                    <p>Elimina impurezas y exceso de sebo mañana y noche.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">02</span>
+                    <h4>Trata</h4>
+                    <p>Aplica activos concentrados según la necesidad de tu piel.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">03</span>
+                    <h4>Protege</h4>
+                    <p>Sella la hidratación y protege contra la radiación solar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con enlaces externos -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 GLOWE Skincare. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <span>&bull;</span>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <span>&bull;</span>
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
