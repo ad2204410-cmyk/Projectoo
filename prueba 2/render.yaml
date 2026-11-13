@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: glowe-catalogo
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /var/data/glowe.db
+      - key: ADMIN_API_KEY
+        generateValue: true
+    disk:
+      name: glowe-data
+      mountPath: /var/data
+      sizeGB: 1

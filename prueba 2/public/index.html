@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GLOWÉ, revista digital de skincare y cuidado de la piel.">
+  <title>GLOWÉ — Skin Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="GLOWÉ, inicio">GLOWÉ<span>°</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#revista">La revista</a>
+      <a href="#filosofia">Nuestra esencia</a>
+    </nav>
+    <a class="header-cta" href="#revista">EXPLORAR ↗</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✳</span> SKINCARE · RITUALES · BIENESTAR</p>
+        <h1>Tu piel, tu<br><em>propio brillo.</em></h1>
+        <p class="hero-description">Una revista para descubrir productos, crear rituales y disfrutar el cuidado de tu piel a tu manera.</p>
+        <a class="hero-button" href="#revista">Descubrir la selección <span>↘</span></a>
+        <div class="hero-note"><span class="note-line"></span> EDICIÓN 01 — THE SKIN ISSUE</div>
+      </div>
+      <div class="hero-art" aria-label="Imagen editorial de productos para el cuidado de la piel">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-label label-top">YOUR DAILY<br>SKIN RITUAL</div>
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85" alt="Productos de cuidado facial sobre un fondo suave">
+        <div class="art-sticker">GLOW<br><span>from within</span></div>
+        <div class="art-label label-bottom">CLEANSE · HYDRATE · GLOW</div>
+      </div>
+      <div class="hero-sideword" aria-hidden="true">SKIN JOURNAL</div>
+    </section>
+
+    <section class="search-section" id="revista">
+      <div class="search-heading">
+        <div>
+          <p class="eyebrow">THE GLOWÉ EDIT</p>
+          <h2>Abre tu próxima rutina.</h2>
+        </div>
+        <p class="search-copy">Busca un producto o explora las páginas<br>de nuestra selección de skincare.</p>
+      </div>
+      <form class="search-bar" id="searchForm" role="search">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <label class="sr-only" for="searchInput">Buscar productos de skincare</label>
+        <input id="searchInput" type="search" placeholder="Prueba: sérum, limpiador, hidratante..." autocomplete="off">
+        <select id="categoryFilter" aria-label="Filtrar por categoría">
+          <option value="all">Todas las categorías</option>
+          <option value="Limpieza">Limpieza</option>
+          <option value="Hidratación">Hidratación</option>
+          <option value="Tratamiento">Tratamiento</option>
+          <option value="Protección solar">Protección solar</option>
+          <option value="Cuidado corporal">Cuidado corporal</option>
+          <option value="Accesorios">Accesorios</option>
+        </select>
+        <button type="submit">Buscar <span>↗</span></button>
+        <button type="button" class="clear-button" id="clearSearch" hidden>Limpiar</button>
+      </form>
+      <p class="results-status" id="searchStatus" aria-live="polite">12 descubrimientos seleccionados para ti.</p>
+
+      <div class="magazine-frame">
+        <div class="magazine-meta">
+          <span><b>G</b> GLOWÉ SKIN JOURNAL</span>
+          <span id="editionLabel">VOL. 01 / 2026</span>
+        </div>
+        <div class="book-shell" id="bookShell">
+          <div class="book-spread">
+            <article class="paper left-paper" id="leftPage" aria-label="Página izquierda"></article>
+            <div class="spine" aria-hidden="true"></div>
+            <article class="paper right-paper" id="rightPage" aria-label="Página derecha"></article>
+          </div>
+          <div class="flip-sheet" id="flipSheet" aria-hidden="true">
+            <div class="flip-front" id="flipFront"></div>
+            <div class="flip-back" id="flipBack"></div>
+          </div>
+        </div>
+        <div class="book-controls">
+          <button class="page-button" id="prevButton" type="button">← <span>Anterior</span></button>
+          <div class="page-indicator">
+            <span id="pageLabel">PÁGINAS 01—04</span>
+            <div class="progress-track"><div id="progressBar"></div></div>
+          </div>
+          <button class="page-button next-button" id="nextButton" type="button"><span>Siguiente</span> →</button>
+        </div>
+        <p class="book-note">Toca “Ver producto” para visitar la tienda externa. Los productos y precios son ejemplos editables.</p>
+      </div>
+    </section>
+
+    <section class="ritual-strip" aria-label="Pasos de cuidado de la piel">
+      <div class="ritual-title"><span>01</span><p>THE DAILY RITUAL</p></div>
+      <div class="ritual-item"><span class="ritual-symbol">◌</span><div><h3>Cleanse</h3><p>Limpia con suavidad</p></div></div>
+      <div class="ritual-item"><span class="ritual-symbol">✳</span><div><h3>Treat</h3><p>Cuida según tus necesidades</p></div></div>
+      <div class="ritual-item"><span class="ritual-symbol">☼</span><div><h3>Protect</h3><p>Protege tu piel cada día</p></div></div>
+    </section>
+
+    <section class="philosophy" id="filosofia">
+      <div class="philosophy-art">
+        <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85" alt="Productos cosméticos para una rutina de cuidado de la piel">
+        <span class="round-seal">GLOWÉ<br>SKIN CARE</span>
+      </div>
+      <div class="philosophy-copy">
+        <p class="eyebrow">A LITTLE NOTE FROM GLOWÉ</p>
+        <h2>El cuidado de la piel<br>también es un <em>ritual.</em></h2>
+        <p>GLOWÉ reúne productos de limpieza, hidratación, tratamiento y protección en una experiencia inspirada en una revista editorial. Explora, compara y encuentra opciones para tu rutina.</p>
+        <p class="small-note">Cada piel es diferente. Revisa los ingredientes, las indicaciones del fabricante y las recomendaciones adecuadas para ti.</p>
+        <a href="#revista" class="text-link">VOLVER A LA REVISTA ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio">GLOWÉ<span>°</span></a>
+    <p>YOUR SKIN. YOUR RITUAL. YOUR GLOW.</p>
+    <small>Catálogo demostrativo. GLOWÉ no procesa pagos ni representa a las tiendas enlazadas.</small>
+  </footer>
+</body>
+</html>
